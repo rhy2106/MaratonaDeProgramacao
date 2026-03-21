@@ -2,6 +2,7 @@
 
 #define _ ios_base::sync_with_stdio(0);cin.tie(0);
 #define ll long long
+#define ld long double
 #define mp make_pair
 #define f first
 #define s second
