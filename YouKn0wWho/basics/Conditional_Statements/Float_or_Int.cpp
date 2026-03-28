@@ -3,6 +3,7 @@
 #define _ ios_base::sync_with_stdio(0);cin.tie(0);
 #define ull unsigned long long
 #define ll long long
+#define ld long double
 #define mp make_pair
 #define f first
 #define s second
@@ -16,6 +17,9 @@
 const int INF = 0x3f3f3f3f;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 const ll MOD = 1e9 + 7;
+const ll A = 911382323;
+const ll B = 972663749;
+
 using namespace std;
 
 int main(){
@@ -24,10 +28,10 @@ int main(){
 	// freopen("closing.in", "r", stdin);
 	// freopen("closing.out", "w", stdout);
     _;
-	long double r; cin >> r;
-	long pi = 3.141592653;
-	cout << fixed << setprecision(9);
-	cout << r * r * pi << endl;
+	ld x; cin >> x;
+	ld dot = x - (int)x;
+	if(dot > 0.0) cout << "float " << (int)x << " " << dot << endl;
+	else cout << "int " << (int)x << endl;
 	tfim = clock();
     cerr << (double)(tfim-tinicio)/CLOCKS_PER_SEC <<  " segundos" << endl;
     return 0;
